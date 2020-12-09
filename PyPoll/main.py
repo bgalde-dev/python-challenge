@@ -39,6 +39,7 @@ with open(data_path) as data_file:
         total_votes += 1
         candidates.update({row[2] : candidates.get(row[2], 0) + 1})
 
+# initialize who the winner will be
 winner_name = ""
 winner_votes = 0
 
@@ -49,6 +50,7 @@ output += "Total Votes: " + str(total_votes) + "\n"
 output += "-------------------------\n"
 for candidate in candidates:
     output += candidate + ": " + str(round(candidates[candidate]/total_votes*100,2)) + "% (" + str(candidates[candidate]) + ")\n"
+    # Determine winner
     if candidates[candidate] > winner_votes:
         winner_name = candidate
         winner_votes = candidates[candidate]
@@ -56,7 +58,9 @@ output += "-------------------------\n"
 output += "Winner: " + winner_name + "\n"
 output += "-------------------------\n"
 
+# Output to file
 with open(output_path, "w") as text_file:
     text_file.write(output)
 
+# Output to terminal
 print(output)
