@@ -3,26 +3,19 @@
 import os
 import csv
 
-# The total number of votes cast
-vote_count = 0
-
-# A complete list of candidates who received votes
-# Dict of candidates
+# A complete list of candidates and votes received
 candidates = {}
+
+# Total votes in file
 total_votes = 0
-
-# The percentage of votes each candidate won
-
-
-# The total number of votes each candidate won
-
-
-#The winner of the election based on popular vote.
-
 
 # Polling data path
 data_path = './Resources/election_data.csv'
 output_path = './Analysis/election_results.txt'
+
+# If having difficulty with the path uncomment the following line to determine 
+# the path you are running the file from. Adjust the data_path to correspond 
+# with the current working directory.
 # print(os.getcwd())
 
 
