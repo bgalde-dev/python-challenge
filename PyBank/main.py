@@ -27,9 +27,9 @@ greatest_dec = ["", sys.float_info.max]
 with open(data_path) as data_file:
     data_reader = csv.reader(data_file, delimiter=",")
 
-    # Skip the header
-    next(data_reader)
-
+    # Save the header
+    header = next(data_reader)
+    
     # Loop through data 
     # Date and Profit/Losses
     for row in data_reader:
