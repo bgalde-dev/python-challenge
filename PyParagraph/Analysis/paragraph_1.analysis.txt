@@ -1,0 +1,7 @@
+Paragraph Analysis of ./Resources/paragraph_1.txt
+-------------------------
+Approximate Word Count: 133
+Approximate Sentence Count: 6
+Average Letter Count (per word): 6.13
+Average Sentence Length (in words): 22.17
+-------------------------
