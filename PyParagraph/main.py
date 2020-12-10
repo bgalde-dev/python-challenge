@@ -17,7 +17,7 @@ for path in data_path:
     with open(path[0]) as data_file:
         paragraph = data_file.read()
         # Split at punctuation marks (sentences)
-        # Should take care of suffixes, quoted line ends, initials. Ther
+        # Should take care of suffixes, quoted line ends, initials.
         sentences = len(re.split("(?<=[\.|\?|\!][\"])|(?<=[\.|\?|\!])(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<![A-Z]\.)\s+", paragraph))
 
         # non-alphanumeric characters
