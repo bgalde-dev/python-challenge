@@ -13,12 +13,6 @@ total_votes = 0
 data_path = './Resources/election_data.csv'
 output_path = './Analysis/election_results.txt'
 
-# If having difficulty with the path uncomment the following line to determine 
-# the path you are running the file from. Adjust the data_path to correspond 
-# with the current working directory.
-# print(os.getcwd())
-
-
 # Open the data file
 with open(data_path) as data_file:
     data_reader = csv.reader(data_file, delimiter=",")

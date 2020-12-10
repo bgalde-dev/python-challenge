@@ -7,11 +7,6 @@ import csv
 data_path = './Resources/budget_data.csv'
 output_path = './Analysis/budget_results.txt'
 
-# If having difficulty with the path uncomment the following line to determine 
-# the path you are running the file from. Adjust the data_path to correspond 
-# with the current working directory.
-# print(os.getcwd())
-
 # Variables
 total_months = 0
 total_amount = 0
@@ -20,8 +15,6 @@ chg = 0
 chg_sum = 0
 greatest_inc = ["", sys.float_info.min]
 greatest_dec = ["", sys.float_info.max]
-
-
 
 # Open the data file
 with open(data_path) as data_file:
