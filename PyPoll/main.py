@@ -23,8 +23,8 @@ output_path = './Analysis/election_results.txt'
 with open(data_path) as data_file:
     data_reader = csv.reader(data_file, delimiter=",")
 
-    # Skip the header
-    next(data_reader)
+    # Save the header
+    header = next(data_reader)
 
     # Loop through data and add candidates and votes for each candidate.
     # Voter ID, County, and Candidate
